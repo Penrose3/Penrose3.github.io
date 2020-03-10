@@ -1,0 +1,287 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #161617;
+	padding-bottom: 30px;
+}
+
+@font-face {
+	font-family: 'Geo Sans';
+    src: url('../fonts/geosans.ttf');
+}
+
+@font-face {
+	font-family: 'Kenyan Coffee';
+    src: url('../fonts/kenyancoffee.ttf');
+}
+
+.projectcontainer {
+	width: 100%;
+	padding: 30px 15px;
+	background-color: #161617;
+	color: #CCDC2D;
+	text-align: center;
+}
+.projectcontainer > div {
+	display: inline-block;
+}
+.project {
+	width: calc(100% / 5 - 8px);
+	max-width: 140px;
+	margin-right: 10px;
+	float: left;
+	border-bottom: 2px solid #000;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+.project:last-of-type {
+	margin-right: 0;
+}
+.project > img {
+	float: left;
+	width: 100%;
+	transition: 0.2s;
+}
+.project > span {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	max-height: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(204,220,45,0.75);
+	transition: 0.4s , border-radius 0.3s 0.1s;
+	overflow: hidden;
+}
+.project > span > span {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	color: #161617;
+	font-size: 4em;
+	opacity: 0;
+	transition: 0.2s;
+	font-family: 'Geo Sans' , sans-serif;
+}
+.project:hover > img {
+	filter: grayscale(100%);
+	transition: 0.4s 0.4s;
+}
+.project:hover > span {
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	max-height: 100%;
+}
+.project:hover > span > span {
+	opacity: 1;
+	transition: 0.3s 0.2s;
+}
+.modalbg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 998;
+	pointer-events: none;
+	transition: 0.4s;
+}
+.modalbg.active {
+	pointer-events: all;
+	background-color: rgba(0,0,0,0.8);
+}
+.projectmodal {
+	position: fixed;
+	bottom: -30px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	overflow: auto;
+	opacity: 0;
+	transition: 0.5s;
+	pointer-events: none;
+}
+.projectmodal.active {
+	bottom: 0;
+	opacity: 1;
+	pointer-events: all;
+}
+.projectmodal > div {
+	position: absolute;
+	width: 100%;
+	max-width: 900px;
+	left: 50%;
+	top: calc(50%);
+	transform: translate(-50%,-50%);
+	padding: 10px;
+	overflow: hidden;
+}
+.projectmodal > div > div {
+	width: 100%;
+	height: 100%;
+	background-color: #161617;
+	border-radius: 10px;
+	border-bottom: 3px solid #000;
+	overflow: auto;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	position: relative;
+}
+.projectmodal > div > div > span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 100%;
+	width: 2.7em;
+	height: 2.7em;
+	background-color: #CCDC2D;
+}
+.projectmodal > div > div > i {
+	position: absolute;
+	top: 0.1em;
+	right: 0.2em;
+	color: #161617;
+	font-size: 1.7em;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.projectmodal > div > div > i:hover {
+	opacity: 0.7;
+}
+.projectmodal > div > div > div {
+	width: 100%;
+	height: 40px;
+	background-color: #555;
+	text-align: center;
+	float: left;
+	position: relative;
+}
+.projectmodal > div > div > div > a {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	color: #161617;
+	font-family: 'Kenyan Coffee', sans-serif;
+	text-decoration: none;
+	font-size: 24px;
+	width: 100%;
+	text-transform: uppercase;
+	position: absolute;
+	transform: translate(-50%,0);
+	left: 50%;
+	z-index: 3;
+}
+.projectmodal > div > div > div:hover > span {
+	max-width: 100%;
+}
+.projectmodal > div > div > div > span {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	max-width: 0;
+	transition: 0.5s;
+	background-color: #CCDC2D;
+	z-index: 2;
+}
+.projectmodal img {
+	width: 100%;
+	float: left;
+}
+.projectmodal p {
+	float: left;
+	width: 100%;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Geo Sans', sans-serif;
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+
+.feature {
+	width: 100%;
+	padding: 30px 15px;
+	background-color: #161617;
+	text-align: center;
+}
+.feature > img {
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+	border-radius: 10px;
+	border-bottom: 3px solid #000;
+	display: inline-block;
+}
+.feature > h1 {
+	color: #fff;
+	font-family: 'Kenyan Coffee', sans-serif;
+	margin: 0.2em 0;
+}
+.feature > p {
+	max-width: 500px;
+	color: #fff;
+	font-family: 'Geo Sans', sans-serif;
+	margin: 0 auto;
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+.ctabanner {
+	width: 100%;
+	background-color: #CCDC2D;
+	padding: 15px;
+	text-align: center;
+}
+.ctabanner > h1 {
+	color: #161617;
+	font-family: 'Kenyan Coffee', sans-serif;
+	font-size: 1.8em;
+}
+.contactbanner {
+	width: 100%;
+	padding: 5px 15px 30px 15px;
+	background-color: #161617;
+	text-align: center;
+}
+.contactbanner > h1 {
+	font-family: 'Kenyan Coffee', sans-serif;
+	font-size: 1.7em;
+	color: #fff;
+}
+.contactbanner > p {
+	color: #fff;
+	font-family: 'Geo Sans', sans-serif;
+	margin-bottom: 0.2em;
+	font-size: 1.2em;
+}
+.contactbanner > a {
+	color: #161617;
+	font-family: 'Kenyan Coffee', sans-serif;
+	padding: 8px 12px;
+	background-color: #CCDC2D;
+	border-radius: 10px;
+	border-bottom: 2px solid #000;
+	text-decoration: none;
+	font-size: 1.4em;
+	position: relative;
+	transition: 0.2s;
+	display: block;
+	width: 100%;
+	max-width: 12em;
+	margin: 0 auto;
+}
+.contactbanner > a:hover {
+	color: #555;
+}
