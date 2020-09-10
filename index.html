@@ -1,0 +1,359 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simon Meyer's Portfolio</title>
+    <link href="styles/styles.css" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <nav id="navigation" class="content">
+                <h1 id="title">Simon Meyer</h1>
+                <div id="social-media-icons">
+                    <a href="mailto:meyers7086@my.uwstout.edu"><img src="img/email.svg" alt="Email"></a>
+                </div>
+            </nav>
+            <div class="section">
+                <div id="featured-image" class="card">
+                    <div class="content">
+                        <div class="contain-image">
+                            <a href="#thefool" onclick="openModal('#thefool')"><img src="img/artwork/DES350TheFool.png" alt="The Fool"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="about">
+                    <h1>About</h1>
+                    <p>
+                        Simon is a designer and software developer who enjoys focusing on the user experience. He has used his knowledge to create websites, software, and video games. In this portfolio, some of his most unique pieces are on display. Each project has insight into Simon's design process, paired with curated images, videos, process books, and links to playable games.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="content">
+                    <h1>Game Design</h1>
+                </div>
+
+                <div class="card small">
+                    <div class="content">
+                        <div class="contain-image">
+                            <a href="#keji" onclick="openModal('#keji')"><img src="img/thumbnails/GDD325KEJI.png" alt="KEJI"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="keji" class="modal">
+                    <div class="container">
+                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <div class="content">
+                            <video class="modal-feature" controls>
+                                <source src="video/GDD325KEJITrailer.mp4" type="video/mp4" /> 
+                            </video>
+                            <h1>KEJI</h1>
+                            <p>
+                                KEJI started as a prototype Simon created in Phaser to test an idea that he had - a platformer where the level could change based on the web browser's size. Simon ended up pitching the idea in class while showing his prototype, and KEJI was born. The group decided to have an emphasis on puzzles in order to show off the unique mechanic the game had to offer. In this project, Simon worked on pretty much everything. He created the player sprites and a handful of objects and environmental sprites, but soon switched to programming when the need arose. Simon programmed the majority of the game at that point, as he had the most knowledge of Phaser. The game features six levels, an interactive start and win screen, text tutorials, and original music and sound effects. Winner of best gameplay at the Stout Game Expo (SGX) in 2020.
+                                <a href="https://uwstoutkeji.itch.io/keji" target="blank_">
+                                    <button class="action-button">Play on itch.io</button>
+                                </a>
+                                <a href="pdf/GDD325KEJIProcessBook.pdf" target="blank_">
+                                    <button class="action-button">View process booklet</button>
+                                </a>
+                            </p>
+                            <img src="img/artwork/GDD325KEJILevel3.png" alt="KEJI Level 3 Layout">
+                            <p>
+                                The artstyle was inspired by old Tamagotchi toys, and is connected to the game's central theme. While it wasn't in the project's scope to include a narrative, the group wanted the game to be a commentary on chicken factory farming. The name, KEJI, is the Japanese word for cage. The level designs would rely on resizing the browser window, or cage, to modify the level in order to proceed. In the level shown above, the player will easily be able to push the ice cube down to the heater to unlock the exit, but getting back up isn't possible without making the window smaller vertically in order to reach the exit.
+                            </p>
+                            <img src="img/artwork/GDD325KEJILevel6.png" alt="KEJI Level 6 Layout">
+                            <p>
+                                Simon also created all of the music and sound effects using BeepBox. This tool easily created retro sounding music that matched the tone of the game. The SFX were carefully chosen to provide player feedback without being annoying. During playtesting, the group noted that the playtesters found the game satisfying, and Simon believes that the difficulty of mastering the resizing mechanic combined with the positive SFX contribute to that effect.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card small">
+                    <div class="content">
+                        <div class="contain-image">
+                            <a href="#runoff" onclick="openModal('#runoff')"><img src="img/thumbnails/GDD100Runoff.png" alt="Runoff"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="runoff" class="modal">
+                    <div class="container">
+                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <div class="content">
+                            <img class="modal-feature" src="img/artwork/GDD100RunoffBoard.png" alt="Runoff Board">
+                            <h1>Runoff</h1>
+                            <p>
+                                Runoff is a board game centered around the environmental threat of runoff. Players have to strategize the expansion of their city by balancing power production and pollution. Adding buildings to your city provides victory points to determine the winner at the end of the game. However, if too much pollution reaches the river, both players immediately lose. The game features a hand crafted wooden board, laser cut wooden pieces, and printed event cards and rulebooks. This game was brought to Protospiel Minnesota in 2018, and was shown in the Best of Design show at Stout in 2019.
+                                <a href="pdf/GDD100BibleRunoff.pdf" target="blank_">
+                                    <button class="action-button">View process booklet</button>
+                                </a>
+                            </p>
+                            <img src="img/artwork/GDD100RunoffCards.jpg" alt="Runoff Cards">
+                            <p>
+                                The event cards were one of Simon's contributions to this project. They provide an element of randomness for players to be surprised by. Some events would be positive, and others would be negative. The cards were printed and hand cut. Simon also designed the poster shown below, the rulebook, and business cards that were used at Protospiel.
+                            </p>
+                            <img src="img/artwork/GDD100RunoffBack.png" alt="Runoff Back of Rulebook">
+                            <p>
+                                The back side of the rulebook (left) provides information about runoff and pollution. There are polluted water sources within Menomonie that were caused by runoff, and the group wanted this game to have an educational component that addressed the inspiration for the game. The artwork on the front side of the rulebook (right) was used as the promotional poster for the game at the Stout Game Expo (SGX).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card small">
+                    <div class="content">
+                        <div class="contain-image">
+                            <a href="#wott" onclick="openModal('#wott')"><img src="img/thumbnails/GDD200WoTT.png" alt="Waltz of the Thief"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="wott" class="modal">
+                    <div class="container">
+                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <div class="content">
+                            <video class="modal-feature" controls>
+                                <source src="video/GDD200WoTT.mp4" type="video/mp4" /> 
+                            </video>
+                            <h1>Waltz of the Thief</h1>
+                            <p>
+                                Waltz of the Thief is an Android game created using Unity. Simon was a member of the small group that created the game. He created the majority of the sprites in the game, along with the level designs. Waltz of the Thief is a stealth game where every character moves at the same time as the player. The player has to predict guard patrols in order to avoid being seen, while also finding the key to the exit door that brings them to the next level. The game features four levels and a tutorial stage, four enemy types, and many NPCs with items to pickpocket.
+                            </p>
+                            <img src="img/artwork/GDD200LibraryDemo.gif" alt="Library Sprite Demo">
+                            <p>
+                                Throughout the course of the game's development, Simon created unique tilesets for each level. To demonstrate the use of the tiles, he created these demos that show how the tiles can be used in a level. This demo is for the library, the third level in the game. It shows the player sprite idle animation, fireplace and portrait sprites for decoration, and floor and wall sprites to construct the level.
+                            </p>
+                            <img src="img/artwork/GDD200HUDDemo.png" alt="HUD Sprite Demo">
+                            <p>
+                                This is another demo of a tileset used in the last level of the game, the attic. This demo also includes the HUD elements used for controlling the player, along with the settings gear. The score counter in the bottom right didn't end up being used in the final game. The centerpiece of the attic level is the stained glass window shown in the center, which provides a dramatic exit for the player as they crash out of the window to escape the mansion.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card small">
+                    <div class="content">
+                        <div class="contain-image">
+                            <a href="#trcr" onclick="openModal('#trcr')"><img src="img/thumbnails/GDD325TRCR.png" alt="T-Rex Cookie Rescue"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="trcr" class="modal">
+                    <div class="container">
+                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <div class="content">
+                            <img class="modal-feature" src="img/artwork/GDD325TRCR.png" alt="T-Rex Cookie Rescue Screenshot">
+                            <h1>T-Rex Cookie Rescue</h1>
+                            <p>
+                                Simon worked as part of a small team to develop a web game for a client, T-Rex Cookie. The game would be a casual, easy to play game that could be tied to a promotion or coupons. The game also had to be developed in roughly 3 weeks, which limited the complexity of the project. T-Rex Cookie Rescue is an infinite runner where the player is a cookie trying to escape being squashed by a T-Rex baker. Within the project, Simon created vector assets for use within Unity, added animations and polish, as well as programming a handful of features into the game. 
+                                <a href="https://simmer.io/@Penrose3/t-rex-cookie-rescue" target="blank_">
+                                    <button class="action-button">Play on simmer.io</button>
+                                </a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <div class="content">
+                    <h1>3D Modeling</h1>
+                </div>
+
+                <div class="card small">
+                    <div class="content">
+                        <div class="contain-image">
+                            <a href="#thefool" onclick="openModal('#thefool')"><img src="img/thumbnails/DES350TheFool.png" alt="The Fool"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="thefool" class="modal">
+                    <div class="container">
+                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <div class="content">
+                            <video class="modal-feature" controls>
+                                <source src="video/DES350TheFoolWalkthrough.mp4" type="video/mp4" /> 
+                            </video>
+                            <h1>The Fool</h1>
+                            <p>
+                                The Fool is an interactive experience that demonstrates 3D techniques using Unreal Engine. The project prompt was a provided tarot card, and Simon drew The Fool. To reflect this, he wanted to create an experience that emphasized the unknown. Simon worked heavily with lighting and sound to create the mysterious, unsettling atmosphere shown in the walkthrough video above.
+                                <a href="pdf/DES350TheFoolProcessBook.pdf" target="blank_">
+                                    <button class="action-button">View process booklet</button>
+                                </a>
+                            </p>
+                            <img src="img/artwork/DES350Portal.png" alt="Active Portal">
+                            <p>
+                                This portal lights up at the end of the experience, when all four gems have been found. This portal acts as a center hub for the experience, as the pathways surround and converge onto this point. The lighting changes dramatically when the portal is active, and makes the cave much less oppressive. This reflects a turning point in the fool's journey, as you would see in a tarot deck.
+                            </p>
+                            <img src="img/artwork/DES350Wall.png" alt="Wall Asset">
+                            <p>
+                                This is one of the modular assets created for use in the experience. The wall mesh was made to be repeated horizontally with no seams. Using Unreal, a blueprint was created to add rocks surrounding the base to break the transition between the floor and wall.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card small">
+                    <div class="content">
+                        <div class="contain-image">
+                            <a href="#midnighthour" onclick="openModal('#midnighthour')"><img src="img/thumbnails/DES372MidnightHour.png" alt="Midnight Hour"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="midnighthour" class="modal">
+                    <div class="container">
+                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <div class="content">
+                            <video class="modal-feature" controls>
+                                <source src="video/DES372MidnightHour.mp4" type="video/mp4" /> 
+                            </video>
+                            <h1>Midnight Hour</h1>
+                            <p>
+                                This was a group project to model and animate a section of a street. Simon arranged the scene with all of the assets that were created, rigged and animated the hooded figure walking towards the camera, modeled the bridge and street, and edited the final video of the project.
+                            </p>
+                            <img src="img/artwork/DES372Bridge.png" alt="Bridge Asset">
+                            <p>
+                                Bridge used to add convincing depth to the scene. The fence asset from the foreground was incorporated into this structure to make the scene cohesive.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card small">
+                    <div class="content">
+                        <div class="contain-image">
+                            <a href="#robot" onclick="openModal('#robot')"><img src="img/thumbnails/DES372Robot.png" alt="Robot"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="robot" class="modal">
+                    <div class="container">
+                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <div class="content">
+                            <video class="modal-feature" controls>
+                                <source src="video/DES372RobotAnimations.mp4" type="video/mp4" /> 
+                            </video>
+                            <h1>Player 13 Robot</h1>
+                            <p>
+                                This was a project that involved designing a robot based on a verb prompt. SImon received the word "kick", and thought of the robots used in the RoboCup. He started with a 2D turnaround of my design before recreating it in Maya. Once it was modeled, he rigged and animated it, resulting in the video above.
+                            </p>
+                            <img src="img/artwork/DES372VectorRobotTurnaround.png" alt="Vector Turnaround">
+                            <p>
+                                Simon wanted the design to be playful and modern, and not aggressive or threatening in any way. The small arms would just be used for balance and right itself if the robot fell over. The design suggests modularity, as if the entire thing could be disassembled and reassembled easily. This could be for maintenance, or to switch out the small arms for larger ones if the robot was acting as the goalie.
+                            </p>
+                            <img src="img/artwork/DES372RobotTurnaround.png" alt="Modeled Turnaround">
+                            <p>
+                                The model translated the same ideas Simon had from above into 3D space. He created a basic ball model to assist, but ended up refining it with an improved concept for the animated video.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <div class="content">
+                    <h1>Web & Graphic Design</h1>
+                </div>
+
+                <div class="card small">
+                    <div class="content">
+                        <div class="contain-image">
+                            <a href="#bdp" onclick="openModal('#bdp')"><img src="img/thumbnails/BDPHomepage.png" alt="Blue Devil Productions"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="bdp" class="modal">
+                    <div class="container">
+                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <div class="content">
+                            <img class="modal-feature" src="img/artwork/BDPHomepage.png" alt="Blue Devil Productions Website">
+                            <h1>Blue Devil Productions Website</h1>
+                            <p>
+                                During his time working with Blue Devil Productions, he was tasked with redesigning their website. Their previous site hadn't been updated in 10 years, and was becoming challenging to maintain. Simon decided that it would be a perfect time to give the site a refresher. The site now features a new layout, cleaner design, mobile friendly version, and easier navigation to important resources. The site links to UW Stout Connect pages that detail all of BDP's events.
+                                <a href="http://www.bdpstout.com" target="blank_">
+                                    <button class="action-button">View website</button>
+                                </a>
+                            </p>
+                            <img src="img/artwork/BDPAboutPage.png" alt="Blue Devil Productions About Page">
+                            <p>
+                                The interior pages retain a similar layout for clarity, and aim to provide information clearly and efficiently. The strong presence of blue helps to reinforce BDP's brand identity, and their relationship with Stout. A focus of the redesign was to create a hierarchy so that the most important information would be viewed first. On the homepage, this would be the slideshow that features the next upcoming events. The blog section of the site was also revisited to be much easier to browse, and also allows for long-form articles to be included as part of BDP's social media presence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card small">
+                    <div class="content">
+                        <div class="contain-image">
+                            <a href="#nrc" onclick="openModal('#nrc')"><img src="img/thumbnails/DES310Poster.png" alt="NRC Poster"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="nrc" class="modal">
+                    <div class="container">
+                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <div class="content">
+                            <img class="modal-feature" src="img/artwork/DES310Poster.png" alt="NRC Poster">
+                            <h1>NRC Poster</h1>
+                            <p>
+                                For this project, Simon was tasked with creating an event poster. While there are organizations that hold similar events, the National Reuse Conference is a fictional event created for use in this project. Simon wanted to make a poster centered around sustainability, and the idea of reuse ties into the transformation of the bottle into a lightbulb. Simon had previously been studying Paula Scher and her use of typography, and decided to incorporate Scher's method of type-as-image into his own style. 
+                                <a href="pdf/DES310PosterProcessBook.pdf" target="blank_">
+                                    <button class="action-button">View process book</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card small">
+                    <div class="content">
+                        <div class="contain-image">
+                            <a href="#soulassemblage" onclick="openModal('#soulassemblage')"><img src="img/thumbnails/MCTCHomepage.png" alt="MCTC Soul Assemblage"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="soulassemblage" class="modal">
+                    <div class="container">
+                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <div class="content">
+                            <img class="modal-feature" src="img/artwork/MCTCHomepage.png" alt="MCTC Soul Assemblage">
+                            <h1>Soul Assemblage</h1>
+                            <p>
+                                Simon was asked to create a website for Minneapolis Community & Technical College's Apparel Design graduate show. That year's title for the show was Soul Assemblage. Simon created a site that featured their work and provided details for their senior show. The website was developed as a custom Wordpress theme, as each graduate had a full bio and multiple pictures attached to them.
+                                <a href="http://soulassemblage.mctcapparelportfolio.com/" target="blank_">
+                                    <button class="action-button">View website</button>
+                                </a>
+                            </p>
+                            <img src="img/artwork/MCTCGallery.png" alt="Soul Assemblage Gallery">
+                            <p>
+                                This view was the most important on the site, as it showed off the student's work. The left side shows their bio, model attribution, and contact information. The right side shows off their work with a dynamic picture frame that adjusts to any image size. The site is also mobile friendly, and rearranges itself to provide the same experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <footer>
+            <p>
+                © 2020 Simon Meyer - All rights reserved
+                <br>
+                meyers7086@my.uwstout.edu
+                <br>
+                Web design by Simon Meyer
+            </p>
+        </footer>
+    </div>
+<div id="blackout" onclick="closeModal()"></div>
+</body>
+</html>
