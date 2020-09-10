@@ -105,6 +105,7 @@ footer p {
 	position: relative;
 	float: left;
 	max-height: 0;
+	cursor: pointer;
 }
 
 .card .content {
