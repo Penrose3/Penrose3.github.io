@@ -9,14 +9,6 @@
     <link rel="icon" href="favicon.ico">
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177843314-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-177843314-1');
-	</script>
 </head>
 <body>
     <div class="container">
@@ -40,6 +32,9 @@
                     <p>
                         Simon is a designer and software developer who enjoys focusing on the user experience. He has used his knowledge to create websites, software, and video games. In this portfolio, some of his most unique pieces are on display. Each project has insight into Simon's design process, paired with curated images, videos, process books, and links to playable games.
                     </p>
+                    <a href="pdf/Meyer_Simon_Resume.pdf" target="blank_">
+                        <button class="action-button">View resume</button>
+                    </a>
                 </div>
             </div>
 
@@ -174,6 +169,34 @@
             <div class="section">
                 <div class="content">
                     <h1>3D Modeling</h1>
+                </div>
+
+                <div class="card small">
+                    <div class="content">
+                        <div class="contain-image">
+                            <a onclick="openModal('#canister')"><img src="img/thumbnails/CoopCanister.jpg" alt="Co-op Canister"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="canister" class="modal">
+                    <div class="container">
+                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <div class="content">
+                            <img class="modal-feature" src="img/artwork/CoopCanisterMesh.jpg" alt="Co-op Canister Mesh">
+                            <h1>Canister Object Design</h1>
+                            <p>
+                                In his senior year, Simon began working for the UW Stout Manufacturing Outreach Center to develop a lean manufacturing training simulation. The simulation targeted Android tablets, and would be a multiplayer experience created in Unity. Due to licensing restrictions at the university, Simon had to learn Blender software for the development of the 3D assets.
+                            </p>
+                            <img src="img/artwork/CoopCanisterConceptArt.jpg" alt="Co-op Canister Concept Art">
+                            <p>
+                                The simulation involved constructing an object with multiple parts, so concept art was created with a focus on creating an object that could be easily broken down into multiple pieces. The canister object was loosely themed around sci-fi electronics.
+                            </p>
+                            <img src="img/artwork/CoopCanisterWireframe" alt="Co-op Canister Wireframe">
+                            <p>
+                                Each part was modeled individually to offer precise construction. Simon was able to practice using Blender, and developed better topology skills along with being exposed to new tools. In particular, Blender's modifier stack was extremely useful for adding detail non-destructively.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card small">
@@ -344,6 +367,44 @@
                             <img src="img/artwork/MCTCGallery.png" alt="Soul Assemblage Gallery">
                             <p>
                                 This view was the most important on the site, as it showed off the student's work. The left side shows their bio, model attribution, and contact information. The right side shows off their work with a dynamic picture frame that adjusts to any image size. The site is also mobile friendly, and rearranges itself to provide the same experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <div class="content">
+                    <h1>User Experience Design</h1>
+                </div>
+
+                <div class="card small">
+                    <div class="content">
+                        <div class="contain-image">
+                            <a onclick="openModal('#takeout')"><img src="img/thumbnails/DES370Takeout.jpg" alt="Take-out!"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="takeout" class="modal">
+                    <div class="container">
+                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <div class="content">
+                            <img class="modal-feature" src="img/artwork/DES370Overview.png" alt="Takeout Overview">
+                            <h1>Take-out!</h1>
+                            <p>
+                                This project was aimed at performing user research for a food mobile app. Simon chose Erbert & Gerbert's, and decided to focus on streamlining the ordering process. To start, a basic usability evaluation was done, followed by a competitive analysis for three other similar apps.
+                                <a href="pdf/DES370TakeoutResearch.pdf" target="blank_">
+                                    <button class="action-button">View full document</button>
+                                </a>
+                            </p>
+                            <img src="img/artwork/DES370Research.png" alt="Takeout Research">
+                            <p>
+                                User research was then performed for the app. Due to COVID-19, in-person interviews were limited. To compensate for a lack of data in this area, an online survey was conducted as well as researching app store reviews for common complaints. Observations taken from the research were grouped into an affinity map, and used to create a prioritization matrix and user personas.
+                            </p>
+                            <img src="img/artwork/DES370Prototype.png" alt="Takeout Prototype">
+                            <p>
+                                Once all the data was gathered, Simon created a new design in the form of a lo-fi paper prototype and tested it with a few users. Most users provided testing over a video call. The prototype proved to be successful, and limited confusion in the areas that users were struggling in the app.
                             </p>
                         </div>
                     </div>
