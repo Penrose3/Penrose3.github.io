@@ -1,0 +1,32 @@
+* {
+	color: #333;
+}
+
+body {
+	background-color: #fff;
+}
+
+footer p {
+	color: #999;
+}
+
+.border {
+	border-color: #ccc;
+}
+
+.card .content .contain-image {
+	border-color: #ccc;
+}
+
+.modal .content {
+	background-color: #fff;
+}
+
+.modal .content > img {
+	border-color: #ccc;
+}
+
+.action-button {
+	border-color: #ccc;
+	background-color: #eee;
+}

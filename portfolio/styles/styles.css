@@ -2,14 +2,12 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	color: #333;
 	font-size: 1em;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 }
 
 body {
-	background-color: #fff;
 	position: relative;
 }
 
@@ -40,7 +38,6 @@ footer {
 }
 
 footer p {
-	color: #999;
 	font-size: 0.8em;
 }
 
@@ -56,14 +53,14 @@ video {
 
 #navigation {
 	width: 100%;
-	padding-bottom: 0;
+	padding-bottom: 0.2em;
 	float: left;
 	text-align: center;
 }
 
 #title {
 	float: left;
-	font-size: 2em;
+	font-size: 2.5em;
 }
 
 #social-media-icons {
@@ -94,6 +91,10 @@ video {
 .section {
 	width: 100%;
 	float: left;
+}
+
+.section.main {
+	margin-bottom: 2em;
 }
 
 .border {
@@ -180,7 +181,6 @@ video {
 }
 
 .modal .content {
-	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: -1px 1px 5px rgba(0,0,0,0.25);
 }
@@ -207,7 +207,6 @@ video {
 	border-radius: 10px;
 	width: 100%;
 	margin-top: 0.5em;
-	background-color: #eee;
 	text-align: center;
 	cursor: pointer;
 }
@@ -224,7 +223,7 @@ video {
 #blackout.active {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.25);
+	background-color: rgba(0,0,0,0.35);
 	cursor: pointer;
 }
 
