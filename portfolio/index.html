@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simon Meyer's Portfolio</title>
     <link href="styles/styles.css" rel="stylesheet" media="screen">
-    <link href="styles/light_theme.css" rel="stylesheet" media="screen">
+    <link href="styles/dark_theme.css" rel="stylesheet" media="screen">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
@@ -17,7 +17,7 @@
             <nav id="navigation" class="content">
                 <h1 id="title">Simon Meyer</h1>
                 <div id="social-media-icons">
-                    <a href="mailto:meyers7086@my.uwstout.edu"><img src="img/email.svg" alt="Email"></a>
+                    <a onclick="openModal('#contact')"><img src="img/email_dark.svg" alt="Contact"></a>
                 </div>
             </nav>
             <div class="section main">
@@ -41,6 +41,22 @@
                 </div>
             </div>
 
+            <div id="contact" class="modal centered">
+                    <div class="container">
+                        <img class="close-button" src="img/close_dark.svg" alt="Close" onclick="closeModal()">
+                        <div class="content">
+                            <h1>Want to get in contact?</h1>
+                            <br>
+                            <p>
+                                <strong>Email:</strong> <a href="mailto:simonmeyerdesign@gmail.com">simonmeyerdesign@gmail.com</a>
+                            </p>
+                            <p>
+                                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/simon-meyer-design/" target="_blank">linkedin.com/in/simon-meyer-design/</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             <div class="section">
                 <div class="content">
                     <h1>Game Design</h1>
@@ -55,7 +71,7 @@
                 </div>
                 <div id="keji" class="modal">
                     <div class="container">
-                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <img class="close-button" src="img/close_dark.svg" alt="Close" onclick="closeModal()">
                         <div class="content">
                             <video class="modal-feature" controls>
                                 <source src="video/GDD325KEJITrailer.mp4" type="video/mp4" /> 
@@ -91,7 +107,7 @@
                 </div>
                 <div id="runoff" class="modal">
                     <div class="container">
-                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <img class="close-button" src="img/close_dark.svg" alt="Close" onclick="closeModal()">
                         <div class="content">
                             <img class="modal-feature" src="img/artwork/GDD100RunoffBoard.png" alt="Runoff Board">
                             <h1>Runoff</h1>
@@ -122,7 +138,7 @@
                 </div>
                 <div id="wott" class="modal">
                     <div class="container">
-                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <img class="close-button" src="img/close_dark.svg" alt="Close" onclick="closeModal()">
                         <div class="content">
                             <video class="modal-feature" controls>
                                 <source src="video/GDD200WoTT.mp4" type="video/mp4" /> 
@@ -152,7 +168,7 @@
                 </div>
                 <div id="trcr" class="modal">
                     <div class="container">
-                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <img class="close-button" src="img/close_dark.svg" alt="Close" onclick="closeModal()">
                         <div class="content">
                             <img class="modal-feature" src="img/artwork/GDD325TRCR.png" alt="T-Rex Cookie Rescue Screenshot">
                             <h1>T-Rex Cookie Rescue</h1>
@@ -177,26 +193,26 @@
                 <div class="card small">
                     <div class="content">
                         <div class="contain-image">
-                            <a onclick="openModal('#canister')"><img src="img/thumbnails/CoopCanister.jpg" alt="Co-op Canister"></a>
+                            <a onclick="openModal('#leancoop')"><img src="img/thumbnails/LeanCanister.png" alt="Lean Canister"></a>
                         </div>
                     </div>
                 </div>
-                <div id="canister" class="modal">
+                <div id="leancoop" class="modal">
                     <div class="container">
-                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <img class="close-button" src="img/close_dark.svg" alt="Close" onclick="closeModal()">
                         <div class="content">
-                            <img class="modal-feature" src="img/artwork/CoopCanisterMesh.jpg" alt="Co-op Canister Mesh">
-                            <h1>Canister Object Design</h1>
+                            <img class="modal-feature" src="img/artwork/LeanCanisterTextures.png" alt="Co-op Canister Textured">
+                            <h1>Lean Manufacturing Simulation Models</h1>
                             <p>
-                                In his senior year, Simon began working for the UW Stout Manufacturing Outreach Center to develop a lean manufacturing training simulation. The simulation targeted Android tablets, and would be a multiplayer experience created in Unity. Due to licensing restrictions at the university, Simon had to learn Blender software for the development of the 3D assets.
+                                In his senior year, Simon began working for the UW Stout Manufacturing Outreach Center to develop a lean manufacturing training simulation. The simulation targeted Android tablets, and would be a multi-player experience created in Unity. Due to licensing restrictions at the university, Simon had to learn open-source software, such as Blender and ArmorPaint, for the creation of the 3D assets.
                             </p>
-                            <img src="img/artwork/CoopCanisterConceptArt.jpg" alt="Co-op Canister Concept Art">
+                            <img src="img/artwork/LeanCanisterModels.png" alt="Co-op Canister Blender Models">
                             <p>
-                                The simulation involved constructing an object with multiple parts, so concept art was created with a focus on creating an object that could be easily broken down into multiple pieces. The canister object was loosely themed around sci-fi electronics.
+                                The simulation involved constructing an object with multiple parts, so the canister was created to be able to be easily broken down into multiple pieces. The canister object was loosely themed around sci-fi electronics. Each part was modeled individually to offer precise construction. Simon was able to practice using Blender, and developed better topology skills along with being exposed to new tools.
                             </p>
-                            <img src="img/artwork/CoopCanisterWireframe.jpg" alt="Co-op Canister Wireframe">
+                            <img src="img/artwork/LeanBGTextures.png" alt="Co-op Background Textured">
                             <p>
-                                Each part was modeled individually to offer precise construction. Simon was able to practice using Blender, and developed better topology skills along with being exposed to new tools. In particular, Blender's modifier stack was extremely useful for adding detail non-destructively.
+                                The simulation also needed a backdrop for the canister objects to be assembled in front of, so background models were created to add to the scene. The models were created in Blender, textured in ArmorPaint, and imported into Unity.
                             </p>
                         </div>
                     </div>
@@ -211,7 +227,7 @@
                 </div>
                 <div id="thefool" class="modal">
                     <div class="container">
-                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <img class="close-button" src="img/close_dark.svg" alt="Close" onclick="closeModal()">
                         <div class="content">
                             <video class="modal-feature" controls>
                                 <source src="video/DES350TheFoolWalkthrough.mp4" type="video/mp4" /> 
@@ -244,7 +260,7 @@
                 </div>
                 <div id="midnighthour" class="modal">
                     <div class="container">
-                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <img class="close-button" src="img/close_dark.svg" alt="Close" onclick="closeModal()">
                         <div class="content">
                             <video class="modal-feature" controls>
                                 <source src="video/DES372MidnightHour.mp4" type="video/mp4" /> 
@@ -270,7 +286,7 @@
                 </div>
                 <div id="robot" class="modal">
                     <div class="container">
-                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <img class="close-button" src="img/close_dark.svg" alt="Close" onclick="closeModal()">
                         <div class="content">
                             <video class="modal-feature" controls>
                                 <source src="video/DES372RobotAnimations.mp4" type="video/mp4" /> 
@@ -307,7 +323,7 @@
                 </div>
                 <div id="bdp" class="modal">
                     <div class="container">
-                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <img class="close-button" src="img/close_dark.svg" alt="Close" onclick="closeModal()">
                         <div class="content">
                             <img class="modal-feature" src="img/artwork/BDPHomepage.png" alt="Blue Devil Productions Website">
                             <h1>Blue Devil Productions Website</h1>
@@ -334,7 +350,7 @@
                 </div>
                 <div id="nrc" class="modal">
                     <div class="container">
-                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <img class="close-button" src="img/close_dark.svg" alt="Close" onclick="closeModal()">
                         <div class="content">
                             <img class="modal-feature" src="img/artwork/DES310Poster.png" alt="NRC Poster">
                             <h1>NRC Poster</h1>
@@ -357,7 +373,7 @@
                 </div>
                 <div id="soulassemblage" class="modal">
                     <div class="container">
-                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <img class="close-button" src="img/close_dark.svg" alt="Close" onclick="closeModal()">
                         <div class="content">
                             <img class="modal-feature" src="img/artwork/MCTCHomepage.png" alt="MCTC Soul Assemblage">
                             <h1>Soul Assemblage</h1>
@@ -391,7 +407,7 @@
                 </div>
                 <div id="takeout" class="modal">
                     <div class="container">
-                        <img class="close-button" src="img/close.svg" alt="Close" onclick="closeModal()">
+                        <img class="close-button" src="img/close_dark.svg" alt="Close" onclick="closeModal()">
                         <div class="content">
                             <img class="modal-feature" src="img/artwork/DES370Overview.png" alt="Takeout Overview">
                             <h1>Take-out!</h1>
@@ -420,7 +436,7 @@
             <p>
                 © 2020 Simon Meyer - All rights reserved
                 <br>
-                meyers7086@my.uwstout.edu
+                <a href="mailto:simonmeyerdesign@gmail.com">simonmeyerdesign@gmail.com</a>
                 <br>
                 Web design by Simon Meyer
             </p>
