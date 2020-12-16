@@ -76,6 +76,7 @@ video {
 	float: left;
 	width: 3em;
 	padding-left: 0.5em;
+	cursor: pointer;
 }
 
 #featured-image {
