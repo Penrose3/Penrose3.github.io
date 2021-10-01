@@ -40,7 +40,11 @@
                     <div id="about">
                         <h1>About</h1>
                         <p>
-                            Simon is a designer and software developer who enjoys focusing on the user experience. He has used his knowledge to create websites, software, and video games. This online portfolio showcases his favorite and most unique pieces. Each project has insight into Simon's design process, paired with curated images, videos, process books, and links to playable games.
+                            Simon is a designer and software developer who enjoys focusing on the user experience. He’s used his knowledge to create websites, software, and video games. 
+                            <br><br>
+                            Simon has 2 years total of professional experience. His top skills are Unity, HTML, CSS, Autodesk Maya, Blender, Adobe Photoshop, Adobe Illustrator, UX, UI, C#, and Javascript.
+                            <br><br>
+                            This online portfolio showcases his favorite and most unique pieces. Each project has insight into Simon's design process, paired with curated images, videos, process books, and links to playable games.
                         </p>
                         <a href="pdf/Meyer_Simon_Resume.pdf" target="blank_">
                             <button class="action-button">View resume</button>
@@ -68,6 +72,55 @@
             <div class="section">
                 <div class="content">
                     <h1>Game Design</h1>
+                </div>
+
+                <div class="card small">
+                    <div class="content">
+                        <div class="contain-image">
+                            <a onclick="openModal('#thefool')"><img src="img/thumbnails/DES350TheFool.png" alt="The Fool"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="thefool" class="modal">
+                    <div class="container">
+                        <img class="close-button" src="img/close_dark.svg" alt="Close" onclick="closeModal()">
+                        <div class="content">
+                            <video class="modal-feature" controls>
+                                <source src="video/DES350TheFoolWalkthrough.mp4" type="video/mp4" /> 
+                            </video>
+                            <h1>The Fool</h1>
+                            <p>
+                                The Fool is an interactive experience that demonstrates 3D techniques using Unreal Engine. The project prompt was a provided tarot card, and Simon drew The Fool. To reflect this, he wanted to create an experience that emphasized the unknown. Simon worked heavily with lighting and sound to create the mysterious, unsettling atmosphere shown in the walkthrough video above.
+                                <a href="pdf/DES350TheFoolProcessBook.pdf" target="blank_">
+                                    <button class="action-button">View process booklet</button>
+                                </a>
+                            </p>
+                            <img src="img/artwork/DES350Portal.png" alt="Active Portal">
+                            <p>
+                                This portal lights up at the end of the experience when all four gems have been found. This portal acts as a center hub for the experience, as the pathways surround and converge onto this point. The lighting changes dramatically when the portal is active, which makes the cave much less oppressive. This reflects a turning point in the fool's journey, as you would see in a tarot deck.
+                            </p>
+                            <img src="img/artwork/DES350Lanterns.png" alt="Lanterns and Wooden Beams">
+                            <p>
+                                This screenshot shows off the lanterns and wooden support beams scattered throughout the level. These lanterns are one of the few sources of light throughout the experience - the others being the lantern held by the player and the portal after it has been activated.
+                            </p>
+                            <img src="img/artwork/DES350Wall.png" alt="Wall Asset">
+                            <p>
+                                These are the modular wall assets created for use in the experience. The wall meshes were made to be repeated horizontally with no seams. Using Unreal, a blueprint was created to add rocks surrounding the base to break the transition between the floor and wall.
+                            </p>
+                            <img src="img/artwork/DES350Materials.png" alt="Unreal Engine Material Setup">
+                            <p>
+                                The materials were set up using Unreal's material nodes system. Some textures, like this cracked ground texture, had to be multiplied in order to scale them correctly over a large area. This material was used for the ceiling and floor.
+                            </p>
+                            <img src="img/artwork/DES350Grayboxes.png" alt="Unreal Engine Level Design Grayboxes">
+                            <p>
+                                A lot of time was spent designing the level before assets were created, and this shows one of the many iterations on the graybox and layout of the experience. The graybox was created using Unreal's primitives and plenty of sketching.
+                            </p>
+                            <img src="img/artwork/DES350Blueprints.png" alt="Unreal Engine Blueprints">
+                            <p>
+                                The interactivity was made possible through Unreal's blueprint system. While Simon could've done this using C++, he decided to give the blueprint system a shot to see what all the fuss was about. The system was used to make simple interactions possible, such as revealing the gemstones and determining if all four gemstones had been collected.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card small">
@@ -684,7 +737,7 @@
 
             <div class="section">
                 <div class="content">
-                    <h1>3D Modeling</h1>
+                    <h1>3D Modeling & Animation</h1>
                 </div>
 
                 <div class="card small">
@@ -710,39 +763,6 @@
                             <img src="img/artwork/LeanBGTextures.png" alt="Co-op Background Textured">
                             <p>
                                 Buzz Digital also needed a backdrop for the canister objects to be assembled in front of, so background models were created to add to the scene. The models were created in Blender, textured in ArmorPaint, and imported into Unity.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card small">
-                    <div class="content">
-                        <div class="contain-image">
-                            <a onclick="openModal('#thefool')"><img src="img/thumbnails/DES350TheFool.png" alt="The Fool"></a>
-                        </div>
-                    </div>
-                </div>
-                <div id="thefool" class="modal">
-                    <div class="container">
-                        <img class="close-button" src="img/close_dark.svg" alt="Close" onclick="closeModal()">
-                        <div class="content">
-                            <video class="modal-feature" controls>
-                                <source src="video/DES350TheFoolWalkthrough.mp4" type="video/mp4" /> 
-                            </video>
-                            <h1>The Fool</h1>
-                            <p>
-                                The Fool is an interactive experience that demonstrates 3D techniques using Unreal Engine. The project prompt was a provided tarot card, and Simon drew The Fool. To reflect this, he wanted to create an experience that emphasized the unknown. Simon worked heavily with lighting and sound to create the mysterious, unsettling atmosphere shown in the walkthrough video above.
-                                <a href="pdf/DES350TheFoolProcessBook.pdf" target="blank_">
-                                    <button class="action-button">View process booklet</button>
-                                </a>
-                            </p>
-                            <img src="img/artwork/DES350Portal.png" alt="Active Portal">
-                            <p>
-                                This portal lights up at the end of the experience when all four gems have been found. This portal acts as a center hub for the experience, as the pathways surround and converge onto this point. The lighting changes dramatically when the portal is active, which makes the cave much less oppressive. This reflects a turning point in the fool's journey, as you would see in a tarot deck.
-                            </p>
-                            <img src="img/artwork/DES350Wall.png" alt="Wall Asset">
-                            <p>
-                                This is one of the modular assets created for use in the experience. The wall mesh was made to be repeated horizontally with no seams. Using Unreal, a blueprint was created to add rocks surrounding the base to break the transition between the floor and wall.
                             </p>
                         </div>
                     </div>

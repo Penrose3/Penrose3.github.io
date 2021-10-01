@@ -51,7 +51,7 @@ video {
 
 .container {
 	width: 100%;
-	max-width: 75em;
+	max-width: 90em;
 	margin: 0 auto;
 }
 
@@ -155,7 +155,7 @@ video {
 	left: 50%;
 	transform: translateX(-50%);
 	width: 100%;
-	max-width: 55em;
+	max-width: 65em;
 	max-height: 100%;
 	padding: 0 1em;
 	z-index: 2;
@@ -279,7 +279,7 @@ body.no-scroll {
 	}
 }
 
-@media (min-width: 20.01em) and (max-width: 50em) { 
+@media (min-width: 20.01em) and (max-width: 60em) { 
 	.card {
 		width: 50%;
 		padding-bottom: 50%; 
@@ -296,7 +296,7 @@ body.no-scroll {
 	}
 }
 
-@media (min-width: 50.01em) and (max-width: 75em) { 
+@media (min-width: 60.01em) and (max-width: 80em) { 
 	.card {
 		width: 25%;
 		padding-bottom: 25%; 
